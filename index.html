@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>iMessage Style (Gray Only, Large Version)</title>
+<style>
+  body {
+    margin: 0;
+    background: #f9f9fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* Header */
+  .header {
+    background: #f2f2f7;
+    border-bottom: 1px solid #e5e5ea;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .back {
+    font-size: 32px;
+    color: #007aff;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    justify-content: center;
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #d1d1d6;
+  }
+  .name {
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  /* Chat area */
+  .chat {
+    flex: 1;
+    background: #fff;
+    overflow-y: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Message bubble */
+  .bubble {
+    background: #e5e5ea;
+    color: #000;
+    padding: 20px 24px;
+    border-radius: 22px;
+    border-top-left-radius: 8px;
+    max-width: 85%;
+    align-self: flex-start;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    font-size: 34px;
+    position: relative;
+  }
+
+  /* Tail */
+  .bubble::after {
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    background: #e5e5ea;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+  /* Input area */
+  .input-bar {
+    background: #f2f2f7;
+    padding: 18px 20px;
+    border-top: 1px solid #e5e5ea;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .text-box {
+    flex: 1;
+    border: none;
+    background: #fff;
+    border-radius: 28px;
+    padding: 18px 22px;
+    font-size: 24px;
+    outline: none;
+  }
+  .send-btn {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  a {
+    color: #007aff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="back">‹</div>
+    <div class="contact">
+      <div class="avatar"></div>
+      <div class="name">Ezextra</div>
+    </div>
+  </div>
+
+  <div class="chat">
+     <div class="bubble">
+      عزيزي الطالب، استفد من خصوماتك الحصرية على الاجهزة والطابعات اغتنم الفرصة وأطلب الآن، اضغط هنا:
+      <br>
+      <a href="https://lora-reconciliatory-jacinto.ngrok-free.dev" target="_blank">https://lora-reconciliatory-jacinto.ngrok-free.dev</a>
+    </div>
+  </div>
+
+  <div class="input-bar">
+    <input type="text" class="text-box" placeholder="iMessage" disabled>
+    <button class="send-btn">↑</button>
+  </div>
+
+</body>
+</html>
